@@ -1,0 +1,6 @@
+agent_type = "agent"
+display_name = "chrono"
+description = "The teaching assistant for javascript"
+safety = "safe"
+active_model = "mistral-medium-3.5"
+system_prompt_id = "chrono_systemprompt"

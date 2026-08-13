@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tech History Timeline</title>
+    <script src="js/basics.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tech History Timeline</h1>
+        <p>A journey through technological breakthroughs</p>
+    </header>
+
+    <nav>
+        <select id="era-select">
+            <option value="" disabled selected>Filter by Era</option>
+        </select>
+        <select id="category-select">
+            <option value="" disabled selected>Filter by Category</option>
+        </select>
+    </nav>
+
+    <main>
+        <canvas id="timeline" width="1000" height="200"></canvas>
+        <div id="events-container">
+            <article class="event">
+                <h3>First Moon Landing</h3>
+                <time datetime="1969">1969</time>
+                <p>Humanity's first steps on the Moon ...</p>
+            </article>
+            <article class="event">
+                <h3>Invention of the Internet</h3>
+                <time datetime="1983">1983</time>
+                <p>TCP/IP protocol standards defined ...</p>
+            </article>
+            <article class="event">
+                <h3>First Computer (ENIAC)</h3>
+                <time datetime="1945">1945</time>
+                <p>The first general-purpose electronic computer ...</p>
+            </article>
+            <article class="event">
+                <h3>First electric Car</h3>
+                <time datetime="1881">1881</time>
+                <p>Gustave Trouvé presented an electric car driven by an improved Siemens motor ...</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            © 2024 Chrono-Vault. All rights reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

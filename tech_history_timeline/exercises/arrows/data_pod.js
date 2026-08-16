@@ -30,5 +30,8 @@ console.log("All events:");
 logEventInfo(events);
 console.log("Sum of years:", totalYears(events));
 
-counts_obj = events.reduce((counts, event) => counts[event.category] + 1)
+counts_obj = events.reduce((counts, event) => {
+    counts[event.category] = (counts[event.category] || 0) + 1;
+    return counts;
+}, {})
 console.log(counts_obj)

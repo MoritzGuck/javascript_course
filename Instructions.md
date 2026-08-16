@@ -85,9 +85,9 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
     - [ ] Functions
         - [x] Function declarations vs expressions
         - [x] Arrow functions
-        - [ ] Parameters, arguments, return values
-        - [ ] Scope and closures
-        - [ ] Higher-order functions
+        - [x] Parameters, arguments, return values
+        - [x] Scope and closures
+        - [x] Higher-order functions
     - [ ] Data Structures
         - [ ] Arrays and array methods (map, filter, reduce, find, etc.)
         - [ ] Objects and object literals

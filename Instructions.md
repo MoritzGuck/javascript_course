@@ -7,47 +7,47 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ## Chapters
 
-- [ ] How Websites Work
+- [ ] Chapter 1: How Websites Work - *Calibrating Temporal Scanners*
     - [x] Basics of Web-Communication
         - [x] GET, POST methods, request response cycle, how messages are structured with header, body, etc.,
         - [x] HTTPS, SSL, TLS encryption
         - [x] How data is sent over the internet: TCP, IP,
-    - **🎯 Project: Tech History Timeline**
-        - [x] **Exercise 1: HTTP in Action**
-          - Research how the [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page) works.
+    - **🎯 Project: Tech History Timeline — Mission: Establish Link**
+        - [x] **Mission 1: HTTP in Action**
+          - Research how the [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page) works to retrieve lost fragments.
           - Write down the **HTTP request** (method, URL, headers) needed to fetch a summary for the event *"First Moon Landing"*.
-          - Use `curl` to test the request and inspect the response.
+          - Use `curl` to test the request and inspect the response from the archives.
     - [x] Web Architecture & How Websites Are Built
         - [x] Client-server model (HTTP requests to a domain • DNS resolution (domain name → IP address))
         - [x] Web servers: What they do, types.
         - [x] Static and dynamic content
-    - **🎯 Project: Tech History Timeline**
-        - [x] **Exercise 2: Client-Server Diagram**
-          - Draw a diagram showing:
+    - **🎯 Project: Tech History Timeline — Mission: Map the Network**
+        - [x] **Mission 2: Client-Server Diagram**
+          - Draw a diagram showing the temporal data flow:
             - Your browser (client) → **DNS Resolution** → Wikipedia API (server/web server) → Response (JSON) → Timeline page (DOM update).
           - Label the **request/response cycle**, where HTTPS/SSL fits in, and distinguish between **static content** (HTML/CSS) and **dynamic content** (API data).
 
 ---
 
-- [x] HTML Refresher
+- [x] Chapter 2: HTML Refresher - *Reconstructing the Interface*
     - [x] HTML syntax basics (header, body, div, br)
-    - **🎯 Project: Tech History Timeline**
-        - [x] **Exercise 1: Static Timeline Structure**
-          - Create `index.html` with:
-            - `<header>` with title `"Tech History Timeline"` and a subtitle.
+    - **🎯 Project: Tech History Timeline — Mission: Blueprint the Vault**
+        - [x] **Mission 1: Static Timeline Structure**
+          - Create `index.html` as the main terminal:
+            - `<header>` with title `"Tech History Timeline"` and a subtitle for the Chrono-Vault.
             - `<nav>` with:
               - A `<form>` containing placeholder `<select>` dropdowns for **era** and **category**.
-              - An `<input type="text">` for searching events and a `<button type="submit">` (Forms/Input elements).
+              - An `<input type="text">` for searching fragments and a `<button type="submit">`.
             - `<main>` with:
-              - A `<canvas id="timeline">` for the visual timeline (width="1000", height="200").
-              - A `<div id="events-container">` to list events as cards.
-            - `<footer>` with a copyright notice.
-        - [x] **Exercise 2: Canvas Setup**
-          - Add a `<canvas>` element and verify it renders as a blank rectangle in the browser.
+              - A `<canvas id="timeline">` for the holographic timeline (width="1000", height="200").
+              - A `<div id="events-container">` to display recovered fragments.
+            - `<footer>` with a Chrono-Vault status notice.
+        - [x] **Mission 2: Canvas Holo-Projector Setup**
+          - Add a `<canvas>` element and verify it initializes in the browser.
     - [x] Semantic HTML (article, section, nav, footer)
-    - **🎯 Project: Tech History Timeline**
-        - [x] **Exercise 3: Semantic Event Cards**
-          - Inside `#events-container`, add **3 static event cards** using semantic HTML:
+    - **🎯 Project: Tech History Timeline — Mission: Archiving First Fragments**
+        - [x] **Mission 3: Semantic Event Cards**
+          - Inside `#events-container`, add **3 static event cards** to test the display:
             ```html
             <article class="event">
               <h3>First Steam Engine</h3>
@@ -57,30 +57,30 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
             ```
     - [x] Forms and input elements
 
-- [x] CSS
+- [x] Chapter 3: CSS - *Restoring Visual Stability*
     - [x] Basic selectors (class, ID, element), simple pseudo-classes (:hover)
     - [x] Box model (margin, border, padding), display, basic positioning
-    - **🎯 Project: Tech History Timeline**
-        - [x] **Exercise 1: Styling the Timeline Structure**
-          - Create `styles.css` and link it to `index.html`.
+    - **🎯 Project: Tech History Timeline — Mission: Terminal Styling**
+        - [x] **Mission 1: Styling the Vault Interface**
+          - Create `styles.css` and link it to your terminal.
           - Style the `<header>` with a futuristic look: dark background, light text, centered title.
           - Style the `<nav>` dropdowns to look like Chrono-Vault control panels with metallic borders.
     - [x] Flexbox basics for layouts
-    - **🎯 Project: Tech History Timeline**
-        - [x] **Exercise 2: Event Cards Layout**
+    - **🎯 Project: Tech History Timeline — Mission: Fragment Presentation**
+        - [x] **Mission 2: Event Cards Layout**
           - Style `.event` cards with:
             - Flexbox layout for the date and content
             - Card-like appearance (shadow, border-radius, padding)
-            - Hover effect using `:hover` to highlight cards
+            - Hover effect using `:hover` to highlight active fragments.
     - [x] Responsive: viewport, simple media queries
-    - **🎯 Project: Tech History Timeline**
-        - [x] **Exercise 3: Responsive Canvas**
+    - **🎯 Project: Tech History Timeline — Mission: Universal Compatibility**
+        - [x] **Mission 3: Responsive Holo-Projector**
           - Make the `<canvas>` responsive using viewport units and media queries.
-          - Add a border to visualize the canvas area.
+          - Add a border to visualize the projection area.
 
 ---
 
-- [ ] Javascript Fundamentals
+- [ ] Chapter 4: Javascript Fundamentals - *Programming Temporal Logic*
     - [x] Language Basics
         - [x] Variables (let, const, var) and data types
         - [x] Operators and expressions
@@ -99,25 +99,25 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
         - [ ] Objects and object literals
         - [ ] Destructuring (arrays and objects)
         - [ ] Spread and rest operators
-    - **🎯 Project: Tech History Timeline**
-        - [x] **Exercise 1: Timeline Data Structure**
+    - **🎯 Project: Tech History Timeline — Mission: Logic Stabilization**
+        - [x] **Mission 1: Fragment Data Structure**
           - Create a JavaScript file `timeline.js`.
-          - Create an `Event` **class** with a constructor to structure your data (Classes/OOP).
-          - Define an array of **5 historical event objects** using your class with properties: `id`, `title`, `year`, `description`, `category`, and an optional `sourceUrl`.
-          - Use template literals to format event descriptions with emojis.
-        - [ ] **Exercise 2: Event Filtering**
-          - Write a function `createFilter(category)` that returns a function (Closure) which filters an array of events by that category.
-          - Use the **spread operator** (`...`) to create a copy of the events array before filtering.
-          - Write a function `getEventTitles(events)` that uses `.map()` to return an array of titles.
-        - [ ] **Exercise 3: Timeline Statistics**
-          - Write a function `getEarliestEvent(events)` that uses `.reduce()` to find the oldest event.
-          - Write a function `countEventsByCategory(events)` that returns an object with category counts.
-        - [ ] **Exercise 4: Dynamic Event Display**
+          - Create an `Event` **class** with a constructor to define the structure of a historical fragment (Classes/OOP).
+          - Define an array of **5 historical fragments** using your class with properties: `id`, `title`, `year`, `description`, `category`, and an optional `sourceUrl`.
+          - Use template literals to format fragment descriptions with emojis for the terminal.
+        - [ ] **Mission 2: Filtering the Stream**
+          - Write a function `createFilter(category)` that returns a function (Closure) which filters fragments by that category.
+          - Use the **spread operator** (`...`) to create a copy of the fragments array before processing.
+          - Write a function `getEventTitles(events)` that uses `.map()` to extract titles for the index.
+        - [ ] **Mission 3: Temporal Statistics**
+          - Write a function `getEarliestEvent(events)` that uses `.reduce()` to locate the oldest fragment in the stream.
+          - Write a function `countEventsByCategory(events)` that returns an object with category distribution counts.
+        - [ ] **Mission 4: Dynamic Terminal Display**
           - Write a function `displayEventInfo(event)` that:
-            - Uses **destructuring** and the **rest operator** (`...otherProps`) to extract properties.
-            - Uses **optional chaining** and **nullish coalescing** (e.g., `event?.sourceUrl ?? 'No source'`) to handle missing data.
+            - Uses **destructuring** and the **rest operator** (`...otherProps`) to parse fragment data.
+            - Uses **optional chaining** and **nullish coalescing** (e.g., `event?.sourceUrl ?? 'No source'`) to handle missing temporal links.
             - Uses a **switch statement** to return a custom emoji prefix based on the `category`.
-            - Logs the final formatted string.
+            - Logs the final formatted fragment to the system log.
     - [ ] ES6+ Features
         - [ ] Modules (import/export)
         - [ ] Classes and OOP in JavaScript
@@ -126,35 +126,35 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Working with the DOM
+- [ ] Chapter 5: Working with the DOM - *Establishing the Neural Link*
     - [ ] DOM Basics
         - [ ] Selecting elements (getElementById, querySelector, etc.)
         - [ ] Traversing the DOM
         - [ ] Modifying elements (content, attributes, styles)
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 1: Selecting Timeline Elements**
-          - Use `querySelector` and `getElementById` to select the `#events-container` and `#timeline` canvas.
-          - Log these elements to verify selection.
-        - [ ] **Exercise 2: Dynamic Event Rendering**
+    - **🎯 Project: Tech History Timeline — Mission: Interface Activation**
+        - [ ] **Mission 1: Selecting Terminal Components**
+          - Use `querySelector` and `getElementById` to link your code to the `#events-container` and `#timeline` projector.
+          - Log these elements to verify the link is active.
+        - [ ] **Mission 2: Dynamic Fragment Projection**
           - Write a function `renderEvents(events)` that:
-            - Clears the `#events-container`
-            - Creates `<article>` elements for each event, **traversing the DOM** to find the correct parent if needed.
-            - Modifies attributes (e.g., `data-id`) and styles dynamically.
-            - Appends them to `#events-container`.
-          - Call this function with your event data from `timeline.js`.
+            - Clears the `#events-container` display.
+            - Creates `<article>` elements for each fragment, **traversing the DOM** to ensure correct placement.
+            - Modifies attributes (e.g., `data-id`) and styles dynamically to reflect fragment status.
+            - Appends them to the vault interface.
+          - Call this function with your fragment data from `timeline.js`.
     - [ ] Events
         - [ ] Event listeners and handlers
         - [ ] Event object and event propagation
         - [ ] Common events (click, submit, keypress, etc.)
         - [ ] Event delegation
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 3: Event Filter Dropdown & Form Submission**
+    - **🎯 Project: Tech History Timeline — Mission: Interactive Controls**
+        - [ ] **Mission 3: Filter Navigation & Command Submission**
           - Use **event delegation** by adding a single listener to the `<nav>` form.
           - Handle both `change` events for the dropdown and `submit` events for the search input.
-          - Prevent default form submission and call `renderEvents()` with the filtered data.
-        - [ ] **Exercise 4: Hover Effects with JS**
-          - Add a mouseenter/mouseleave event listener to each event card.
-          - Toggle a CSS class to highlight the card when hovered.
+          - Prevent default form submission and call `renderEvents()` with the filtered fragments.
+        - [ ] **Mission 4: Neural Hover Feedback**
+          - Add a mouseenter/mouseleave event listener to each fragment card.
+          - Toggle a CSS class to highlight the card when the user's focus (hover) is detected.
     - [ ] Forms
         - [ ] Form selection and validation
         - [ ] Handling form submission
@@ -162,33 +162,33 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Asynchronous JavaScript
+- [ ] Chapter 6: Asynchronous JavaScript - *Temporal Synchronization*
     - [ ] Callbacks and callback hell
     - [ ] Promises
         - [ ] Creating and consuming promises
         - [ ] Promise chaining (then, catch, finally)
         - [ ] Promise static methods (all, race, allSettled)
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 1: Simulating API with setTimeout**
-          - Create a function `fetchEventsWithDelay()` that uses `setTimeout` to simulate fetching events after 1 second.
-          - Return a Promise that resolves with your event data.
-        - [ ] **Exercise 2: Promise Chaining for Events**
+    - **🎯 Project: Tech History Timeline — Mission: Signal Buffering**
+        - [ ] **Mission 1: Simulating Fragment Fetching**
+          - Create a function `fetchEventsWithDelay()` that uses `setTimeout` to simulate the delay of retrieving fragments from the deep archives.
+          - Return a Promise that resolves with your fragment data after 1 second.
+        - [ ] **Mission 2: Sequence Calibration**
           - Create a function `loadAndRenderEvents()` that:
             - Calls `fetchEventsWithDelay()`
-            - Uses `.then()` to call `renderEvents()` with the data
-            - Uses `.catch()` to handle errors
-        - [ ] **Exercise 4: Parallel Data Loading**
-          - Create multiple Promise-based functions to fetch different categories of events.
+            - Uses `.then()` to call `renderEvents()` once the data arrives.
+            - Uses `.catch()` to handle signal interference (errors).
+        - [ ] **Mission 3: Parallel Fragment Recovery**
+          - Create multiple Promise-based functions to fetch different categories of fragments.
           - Use `Promise.all()` to load all categories simultaneously and merge the results.
-          - Experiment with `Promise.race()` to log which category loads the fastest.
+          - Experiment with `Promise.race()` to see which sector of the archives responds fastest.
     - [ ] Async/Await
         - [ ] async functions
         - [ ] await operator
         - [ ] Error handling with try/catch
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 3: Async/Await Refactor**
-          - Rewrite `loadAndRenderEvents()` using `async/await` syntax.
-          - Add try/catch for error handling.
+    - **🎯 Project: Tech History Timeline — Mission: Async Protocol Refactor**
+        - [ ] **Mission 4: Streamlined Retrieval**
+          - Rewrite `loadAndRenderEvents()` using `async/await` syntax for better temporal clarity.
+          - Add try/catch to safeguard against archive failures.
     - [ ] Fetch API
         - [ ] Making HTTP requests
         - [ ] Handling responses and errors
@@ -196,7 +196,7 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Working with APIs
+- [ ] Chapter 7: Working with APIs - *Recovering the Archives*
     - [ ] Understanding RESTful APIs
         - [ ] REST principles
         - [ ] HTTP methods and status codes
@@ -205,104 +205,104 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
         - [ ] Fetching data from public APIs
         - [ ] Handling loading states and errors
         - [ ] Displaying API data in the DOM
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 1: Wikipedia API Integration**
-          - Use the `fetch` API to request data from the Wikipedia API for a historical event (e.g., "First Moon Landing").
-          - Parse the JSON response and extract the summary text.
-        - [ ] **Exercise 2: API Error Handling**
+    - **🎯 Project: Tech History Timeline — Mission: Real-World Linkage**
+        - [ ] **Mission 1: Wikipedia Archive Integration**
+          - Use the `fetch` API to request data from the Wikipedia archives for a specific historical event (e.g., "First Moon Landing").
+          - Parse the JSON response and extract the summary text to restore the fragment.
+        - [ ] **Mission 2: Resilience Protocols**
           - Enhance your fetch call with proper error handling:
             - Check `response.ok` and handle specific **HTTP status codes** (e.g., 404, 500).
             - Use `try/catch` to handle network failures.
-          - Display user-friendly error messages in the UI.
-        - [ ] **Exercise 3: Loading States**
-          - Add a loading spinner (or text) that appears when data is being fetched.
-          - Hide it when data loads or when an error occurs.
+          - Display user-friendly error messages on the terminal if a fragment cannot be recovered.
+        - [ ] **Mission 3: Transmission Status**
+          - Add a loading spinner (or "Synchronizing..." text) that appears while data is being fetched.
+          - Hide it when the fragment is successfully projected or if an error occurs.
     - [ ] Building a simple API client
         - [ ] Creating a reusable API service
         - [ ] Error handling strategies
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 4: API Service Module**
-          - Create a reusable module `apiService.js` with a function `fetchWikipediaSummary(title)` that encapsulates the Wikipedia API call logic.
-          - Import and use this module in your main application.
+    - **🎯 Project: Tech History Timeline — Mission: Modular Archive Service**
+        - [ ] **Mission 4: Archive Service Module**
+          - Create a reusable module `apiService.js` with a function `fetchWikipediaSummary(title)` that encapsulates the retrieval logic.
+          - Import and use this module in your main terminal application.
 
 ---
 
-- [ ] Data Visualization with JavaScript
+- [ ] Chapter 8: Data Visualization - *Activating the Hologram*
     - [ ] Canvas API basics
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 1: Canvas Timeline Drawing**
-          - Use the Canvas API to draw a horizontal timeline line with year markers.
-          - Position event dots along the timeline based on their year.
-        - [ ] **Exercise 2: Event Visualization**
-          - Draw circles or rectangles on the canvas at positions corresponding to event years.
-          - Add tooltips (using title attributes or custom divs) showing event info on hover.
+    - **🎯 Project: Tech History Timeline — Mission: Holographic Mapping**
+        - [ ] **Mission 1: Mapping the Timeline Line**
+          - Use the Canvas API to draw a horizontal temporal axis with year markers.
+          - Position fragment dots along the axis based on their historical year.
+        - [ ] **Mission 2: Visual Fragment Markers**
+          - Draw circles or rectangles on the canvas at positions corresponding to fragment dates.
+          - Add tooltips or custom overlays showing fragment info when the scanner (cursor) hovers over them.
     - [ ] Introduction to Chart.js or D3.js
         - [ ] Creating simple charts (bar, line, pie)
         - [ ] Customizing charts
         - [ ] Handling dynamic data
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 3: Chart.js Integration**
+    - **🎯 Project: Tech History Timeline — Mission: Statistical Visualization**
+        - [ ] **Mission 3: Category Distribution Chart**
           - Install Chart.js via CDN or npm.
-          - Create a bar chart showing the number of events per category using your event data.
-        - [ ] **Exercise 4: Dynamic Data Visualization**
-          - Update the chart when the user filters events by category.
-          - Animate the chart update for smooth transitions.
+          - Create a bar chart showing the number of fragments per category to analyze archive health.
+        - [ ] **Mission 4: Dynamic Update Stream**
+          - Update the chart in real-time when the user filters fragments by category.
+          - Animate the chart update for a smooth holographic transition.
     - [ ] Visualizing data from APIs
 
 ---
 
-- [ ] Modern JavaScript Development
+- [ ] Chapter 9: Modern JavaScript Development - *Optimizing the Protocol*
     - [ ] Modules and Modular Code
         - [ ] ES Modules
         - [ ] Module patterns
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 1: Modular Timeline Code**
-          - Split your JavaScript code into modules:
-            - `events.js` - event data and filtering functions
-            - `rendering.js` - DOM rendering functions
-            - `api.js` - API service functions
-          - Use ES6 import/export to share functionality between modules.
+    - **🎯 Project: Tech History Timeline — Mission: Modular Architecture**
+        - [ ] **Mission 1: Modular Timeline Code**
+          - Split your terminal code into mission-specific modules:
+            - `events.js` - fragment data and filtering logic.
+            - `rendering.js` - interface rendering functions.
+            - `api.js` - archive service functions.
+          - Use ES6 import/export to establish links between modules.
     - [ ] npm and Package Management
         - [ ] Initializing a project
         - [ ] Installing and using packages
         - [ ] package.json and package-lock.json
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 2: npm Project Setup**
-          - Initialize a new npm project with `npm init`.
-          - Create a `package.json` with appropriate scripts for development.
-        - [ ] **Exercise 3: Installing Chart.js via npm**
-          - Install Chart.js as a dependency.
-          - Replace your CDN usage with the npm-installed version.
+    - **🎯 Project: Tech History Timeline — Mission: System Initialization**
+        - [ ] **Mission 2: npm Project Setup**
+          - Initialize a new npm project within the vault.
+          - Create a `package.json` with automation scripts for development.
+        - [ ] **Mission 3: Integrated Dependency Management**
+          - Install Chart.js as a local dependency.
+          - Replace your old CDN links with the npm-managed version.
     - [ ] Bundlers (Optional)
         - [ ] Introduction to webpack or vite
         - [ ] Basic configuration
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 4: Vite Setup (Optional)**
-          - Initialize a Vite project for your timeline application.
-          - Configure Vite to serve your HTML, CSS, and JavaScript files.
+    - **🎯 Project: Tech History Timeline — Mission: Warp Speed with Vite**
+        - [ ] **Mission 4: Vite Deployment Setup**
+          - Initialize a Vite project to accelerate the interface development.
+          - Configure Vite to serve your fragments, styles, and logic.
 
 ---
 
-- [ ] Frontend Frameworks (Optional - Pick one based on interest)
+- [ ] Chapter 10: Frontend Frameworks - *Advanced UI Components*
     - [ ] React
         - [ ] Components and JSX
-        - **🎯 Project: Tech History Timeline**
-            - [ ] **Exercise 1: React Component Structure**
-              - Create a React project and set up the basic component structure.
-              - Create a `Timeline` component that will hold the entire timeline.
+        - **🎯 Project: Tech History Timeline — Mission: React Portal**
+            - [ ] **Mission 1: Component Architecture**
+              - Initialize a React portal and define the basic component tree.
+              - Create a `Timeline` component to encapsulate the holographic display.
         - [ ] State and props
-        - **🎯 Project: Tech History Timeline**
-            - [ ] **Exercise 2: Event Card Component**
-              - Create a reusable `EventCard` component that takes event data as props.
-              - Style it to match your existing design.
+        - **🎯 Project: Tech History Timeline — Mission: Reusable Components**
+            - [ ] **Mission 2: Fragment Card Component**
+              - Create a reusable `EventCard` component that accepts fragment data as props.
+              - Style it to match the Chrono-Vault's futuristic aesthetic.
         - [ ] Hooks (useState, useEffect)
-        - **🎯 Project: Tech History Timeline**
-            - [ ] **Exercise 3: State Management**
-              - Use `useState` to manage the list of events and the selected category.
-              - Update the event list when the category filter changes.
-            - [ ] **Exercise 4: API Integration in React**
-              - Use `useEffect` to fetch Wikipedia summaries when an event is selected.
-              - Display the summary in a modal or details panel.
+        - **🎯 Project: Tech History Timeline — Mission: State Management**
+            - [ ] **Mission 3: Temporal State Control**
+              - Use `useState` to manage active fragments and filter settings.
+              - Update the display automatically when the user interacts with the controls.
+            - [ ] **Mission 4: Effect-Based Synchronization**
+              - Use `useEffect` to trigger archive fetches when a fragment is selected for detail analysis.
+              - Display the recovered summary in a modal overlay.
         - [ ] Building a simple React app
     - [ ] Vue.js
         - [ ] Templates and directives
@@ -312,7 +312,7 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Backend with Node.js (Optional)
+- [ ] Chapter 11: Backend with Node.js - *Central Hub Construction*
     - [ ] Node.js basics
         - [ ] Running JavaScript on the server
         - [ ] Node.js modules
@@ -320,93 +320,92 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
         - [ ] Setting up an Express server
         - [ ] Routing and middleware
         - [ ] Handling requests and responses
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 1: Express Server Setup**
-          - Create a new Node.js project and install Express.
-          - Implement a custom **middleware** function that logs the request method and URL.
-          - Set up a basic Express server with a route that returns "Chrono-Vault API Online".
-        - [ ] **Exercise 2: Timeline API Endpoint**
-          - Create a GET endpoint `/api/events` that returns your event data as JSON.
-          - Add a GET endpoint `/api/events/:id` that returns a single event by ID.
-        - [ ] **Exercise 3: POST Endpoint for New Events**
-          - Create a POST endpoint `/api/events` that accepts new event data and adds it to your dataset.
-          - Return the created event with a 201 status code.
+    - **🎯 Project: Tech History Timeline — Mission: Central Hub Online**
+        - [ ] **Mission 1: Express Hub Setup**
+          - Initialize a Node.js project for the Chrono-Vault's central hub.
+          - Implement custom **middleware** to log incoming retrieval requests.
+          - Set up the server with a baseline route returning "Chrono-Vault Hub Active".
+        - [ ] **Mission 2: Archive API Endpoints**
+          - Create a GET endpoint `/api/events` to serve fragment data as JSON.
+          - Add a GET endpoint `/api/events/:id` for specific fragment analysis.
+        - [ ] **Mission 3: Fragment Ingestion Protocol**
+          - Create a POST endpoint `/api/events` to accept new historical fragments from the field.
+          - Return the stored fragment with a 201 status code.
     - [ ] Building a simple API
         - [ ] REST API endpoints
         - [ ] Connecting to a database (SQLite, PostgreSQL)
         - [ ] CORS and security basics
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 4: Database Integration & Security**
-          - Set up SQLite and create a database schema for events.
-          - Modify your endpoints to query the database using parameterized queries to prevent SQL injection (**Security basics**).
-          - Test that your API still returns correct data from the database.
+    - **🎯 Project: Tech History Timeline — Mission: Persistent Archives**
+        - [ ] **Mission 4: Database Hardening**
+          - Integrate SQLite to store fragments permanently.
+          - Use parameterized queries to protect the archives from SQL injection (**Security Protocol**).
+          - Verify the hub still serves data correctly from the database.
 
 ---
 
-- [ ] Full-Stack Application
+- [ ] Chapter 12: Full-Stack Application - *System Integration*
     - [ ] Connecting frontend and backend
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 1: Connect Frontend to Backend**
-          - Update your frontend to fetch events from your Express API instead of using local data.
-          - Include a placeholder `Authorization` header in your request to simulate **Authentication basics**.
-          - Handle the response and render events as before.
-        - [ ] **Exercise 4: CORS Configuration**
-          - Configure CORS in your Express server to allow requests from your frontend domain.
-          - Test that your frontend can successfully communicate with the backend.
+    - **🎯 Project: Tech History Timeline — Mission: End-to-End Linkage**
+        - [ ] **Mission 1: Neural Link to the Hub**
+          - Update your terminal to fetch fragments from your Express hub instead of local files.
+          - Include a simulated `Authorization` header to practice **Authentication basics**.
+          - Handle the hub's responses and update the terminal display.
+        - [ ] **Mission 2: Firewall Configuration (CORS)**
+          - Configure CORS in the hub to allow access from the terminal's domain.
+          - Verify successful cross-origin transmission.
     - [ ] Building a complete CRUD application
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 2: Full CRUD Implementation**
-          - Add a form to create new events that sends POST requests to your backend.
-          - Add edit and delete buttons to each event card that make PUT and DELETE requests.
-        - [ ] **Exercise 3: Real-time Updates**
-          - After creating, updating, or deleting an event, refresh the event list without a full page reload.
-          - Provide user feedback (e.g., toast notifications) on successful operations.
+    - **🎯 Project: Tech History Timeline — Mission: Full Data Control**
+        - [ ] **Mission 3: CRUD Implementation**
+          - Build an interface to add new fragments via POST requests.
+          - Implement edit and delete protocols (PUT/DELETE) for each fragment card.
+        - [ ] **Mission 4: Real-time Interface Refresh**
+          - Update the terminal display immediately after any archive modification without a full reboot (reload).
+          - Provide visual feedback (toast alerts) for successful operations.
     - [ ] Authentication basics (if time permits)
 
 ---
 
-- [ ] Deployment
+- [ ] Chapter 13: Deployment - *Going Global*
     - [ ] Static site hosting (GitHub Pages, Netlify, Vercel)
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 1: Deploy Frontend to Netlify**
-          - Prepare your frontend code for production (remove development dependencies, set base path if needed).
-          - Deploy your static frontend to Netlify and verify it works.
+    - **🎯 Project: Tech History Timeline — Mission: Global Uplink**
+        - [ ] **Mission 1: Deploy Terminal to Netlify**
+          - Prepare the terminal code for public broadcast (production).
+          - Deploy to Netlify and verify the holographic display is visible worldwide.
     - [ ] Deploying a Node.js app (Render, Railway, Heroku)
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 2: Deploy Backend to Render**
-          - Configure your Express server for production (set PORT from environment variables).
-          - Deploy your Node.js backend to Render or Railway.
-          - Test your API endpoints using the deployed URL.
+    - **🎯 Project: Tech History Timeline — Mission: Hub Uplink**
+        - [ ] **Mission 2: Deploy Hub to Render**
+          - Configure the Express hub for production (Environment ports).
+          - Deploy the hub to Render or Railway.
+          - Test the live API endpoints.
     - [ ] Environment variables and configuration
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 3: Environment Variables**
-          - Move sensitive configuration (API keys, database URLs) to environment variables.
-          - Use a `.env` file for development and configure production environment variables in your hosting provider.
+    - **🎯 Project: Tech History Timeline — Mission: Security Encryption**
+        - [ ] **Mission 3: Environment Guarding**
+          - Move sensitive vault keys and database links to environment variables.
+          - Use `.env` for local testing and provider-side variables for production.
     - [ ] CI/CD basics (GitHub Actions)
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 4: GitHub Actions CI/CD**
-          - Create a GitHub Actions workflow that runs tests on push.
-          - Set up automatic deployment to Netlify on successful tests.
+    - **🎯 Project: Tech History Timeline — Mission: Automated Repair Protocol**
+        - [ ] **Mission 4: Continuous Integration**
+          - Set up a GitHub Actions workflow to run diagnostics (tests) on every push.
+          - Enable automatic deployment to Netlify once diagnostics pass.
 
 ---
 
-- [ ] Testing (Optional)
+- [ ] Chapter 14: Testing - *Verifying Stability*
     - [ ] Introduction to testing in JavaScript
     - [ ] Jest basics
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 1: Jest Setup**
-          - Install Jest and configure it for your project.
-          - Write a simple test to verify your `filterEventsByCategory` function works correctly.
-        - [ ] **Exercise 2: Testing Utility Functions**
-          - Write tests for your timeline utility functions (`getEarliestEvent`, `countEventsByCategory`, etc.).
-          - Test edge cases (empty arrays, single events, etc.).
-        - [ ] **Exercise 3: Testing Async Code & API Mocking**
-          - Write tests for your async functions (`fetchEventsWithDelay`, etc.).
-          - Use Jest to **mock an API call** to the Wikipedia service.
-          - Use Jest's async testing features (`async/await` or `.then()`).
+    - **🎯 Project: Tech History Timeline — Mission: Diagnostic Calibration**
+        - [ ] **Mission 1: Diagnostic Suite Setup**
+          - Install Jest and initialize the testing suite.
+          - Write a test to verify the fragment filtering logic.
+        - [ ] **Mission 2: Utility Verification**
+          - Write tests for analysis functions (`getEarliestEvent`, `countEventsByCategory`).
+          - Test edge cases like empty archives or corrupted data.
+        - [ ] **Mission 3: Async & Archive Mocking**
+          - Write tests for asynchronous retrieval functions.
+          - Use Jest to **mock Wikipedia archive responses** for reliable testing.
     - [ ] Testing DOM manipulations
-    - **🎯 Project: Tech History Timeline**
-        - [ ] **Exercise 4: DOM Testing**
-          - Use Jest with jsdom to test your `renderEvents` function.
-          - Verify that the correct number of event cards are created and have the right content.
+    - **🎯 Project: Tech History Timeline — Mission: Interface Stress Test**
+        - [ ] **Mission 4: DOM Interaction Testing**
+          - Use Jest with jsdom to verify the `renderEvents` protocol.
+          - Ensure the correct number of fragments are projected with the right metadata.
     - [ ] Testing API calls

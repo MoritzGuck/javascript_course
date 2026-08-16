@@ -12,3 +12,18 @@ The student is a Time Archaeologist aboard the Chrono-Vault, a starship that pre
 
 
 ## Chapters
+
+1. **How Websites Work**: Calibrating the temporal scanners to understand web communication.
+2. **HTML Refresher**: Reconstructing the Chrono-Vault interface.
+3. **CSS**: Restoring the visual aesthetic of the Tech History Timeline.
+4. **JavaScript Fundamentals**: Programming the temporal logic and data structures.
+5. **Working with the DOM**: Establishing a neural link with the interface.
+6. **Asynchronous JavaScript**: Dealing with temporal delays and data fetching.
+7. **Working with APIs**: Recovering lost data from the Wikipedia archives.
+8. **Data Visualization**: Activating the holographic timeline display.
+9. **Modern JS Development**: Optimizing the repair protocol with modules and tools.
+10. **Frontend Frameworks**: Building advanced components for the Chrono-Vault.
+11. **Backend with Node.js**: Creating a central hub for history data.
+12. **Full-Stack Application**: Integrating the entire system for a permanent fix.
+13. **Deployment**: Uploading the restored timeline to the global network.
+14. **Testing**: Verifying the temporal stability of our repairs.

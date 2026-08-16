@@ -95,9 +95,9 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
         - [x] Scope and closures
         - [x] Higher-order functions
     - [ ] Data Structures
-        - [ ] Arrays and array methods (map, filter, reduce, find, etc.)
-        - [ ] Objects and object literals
-        - [ ] Destructuring (arrays and objects)
+        - [x] Arrays and array methods (map, filter, reduce, find, etc.)
+        - [x] Objects and object literals
+        - [x] Destructuring (arrays and objects)
         - [ ] Spread and rest operators
     - **🎯 Project: Tech History Timeline — Mission: Logic Stabilization**
         - [x] **Mission 1: Fragment Data Structure**

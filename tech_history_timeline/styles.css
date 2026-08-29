@@ -16,41 +16,12 @@ header p {
     opacity: 0.8;
 }
 
-nav form {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1rem;
-    background: rgba(26, 26, 46, 0.8);
-    border-bottom: 1px solid #5a7a95;
-}
-
-nav select, nav input, nav button {
+nav select {
     border: 2px solid #5a7a95;
     border-radius: 4px;
     background-color: #2a2a3e;
     color: #e6e6ff;
     padding: 0.5rem;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-nav button {
-    cursor: pointer;
-    background-color: #5a7a95;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-nav button:hover {
-    background-color: #7aa2b5;
-}
-
-.neural-highlight {
-    border-left-color: #00f2ff !important;
-    box-shadow: 0 0 20px rgba(0, 242, 255, 0.5) !important;
-    background-color: #32324e !important;
 }
 
 .event {
@@ -87,6 +58,25 @@ nav button:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(90, 122, 149, 0.4);
     border-left-color: #7aa2b5;
+}
+
+.neural-highlight {
+    background-color: #e6e6ff;
+    border-left-color: #00f2ff !important;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+    transform: translateY(-4px);
+}
+
+.neural-highlight h3 {
+    color: #1a1a2e;
+}
+
+.neural-highlight p {
+    color: #1a1a2e;
+}
+
+.neural-highlight time {
+    color: #1a1a2e;
 }
 
 #timeline {

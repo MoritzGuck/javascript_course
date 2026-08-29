@@ -17,44 +17,27 @@
 
     <nav>
         <form id="controls-form">
-            <select id="era-select" name="era">
+            <select name="era" id="era-select">
                 <option value="" disabled selected>Filter by Era</option>
                 <option value="all">All Eras</option>
+                <option value="prehistoric">Prehistoric</option>
+                <option value="modern">Modern</option>
             </select>
-            <select id="category-select" name="category">
+            <select name="category" id="category-select">
                 <option value="all">All Categories</option>
                 <option value="transport">Transport</option>
                 <option value="information">Information</option>
                 <option value="space">Space</option>
             </select>
-            <input type="text" id="search-input" name="search" placeholder="Search fragments...">
-            <button type="submit">Scan Timeline</button>
+            <input name="search" type="search" placeholder="Search fragments...">
+            <button type="submit">search</button>
         </form>
     </nav>
 
     <main>
         <canvas id="timeline" width="1000" height="200"></canvas>
         <div id="events-container">
-            <article class="event">
-                <h3>First Moon Landing</h3>
-                <time datetime="1969">1969</time>
-                <p>Humanity's first steps on the Moon ...</p>
-            </article>
-            <article class="event">
-                <h3>Invention of the Internet</h3>
-                <time datetime="1983">1983</time>
-                <p>TCP/IP protocol standards defined ...</p>
-            </article>
-            <article class="event">
-                <h3>First Computer (ENIAC)</h3>
-                <time datetime="1945">1945</time>
-                <p>The first general-purpose electronic computer ...</p>
-            </article>
-            <article class="event">
-                <h3>First electric Car</h3>
-                <time datetime="1881">1881</time>
-                <p>Gustave Trouvé presented an electric car driven by an improved Siemens motor ...</p>
-            </article>
+            <!-- Fragments will be projected here -->
         </div>
     </main>
 

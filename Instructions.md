@@ -142,23 +142,23 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
             - Modifies attributes (e.g., `data-id`) and styles dynamically to reflect fragment status.
             - Appends them to the vault interface.
           - Call this function with your fragment data from `timeline.js`.
-    - [ ] Events
-        - [ ] Event listeners and handlers
-        - [ ] Event object and event propagation
-        - [ ] Common events (click, submit, keypress, etc.)
-        - [ ] Event delegation
+    - [x] Events
+        - [x] Event listeners and handlers
+        - [x] Event object and event propagation
+        - [x] Common events (click, submit, keypress, etc.)
+        - [x] Event delegation
     - **🎯 Project: Tech History Timeline — Mission: Interactive Controls**
-        - [ ] **Mission 3: Filter Navigation & Command Submission**
+        - [x] **Mission 3: Filter Navigation & Command Submission**
           - Use **event delegation** by adding a single listener to the `<nav>` form.
           - Handle both `change` events for the dropdown and `submit` events for the search input.
           - Prevent default form submission and call `renderEvents()` with the filtered fragments.
-        - [ ] **Mission 4: Neural Hover Feedback**
+        - [x] **Mission 4: Neural Hover Feedback**
           - Add a mouseenter/mouseleave event listener to each fragment card.
           - Toggle a CSS class to highlight the card when the user's focus (hover) is detected.
-    - [ ] Forms
-        - [ ] Form selection and validation
-        - [ ] Handling form submission
-        - [ ] Working with form data
+    - [x] Forms
+        - [x] Form selection and validation
+        - [x] Handling form submission
+        - [x] Working with form data
 
 ---
 

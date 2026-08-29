@@ -1,7 +1,7 @@
 ---
 description: The teaching assistant for javascript
 mode: subagent
-model: mistral-medium-3.5
+model: google/gemini-flash-latest
 temperature: 0.1
 ---
 

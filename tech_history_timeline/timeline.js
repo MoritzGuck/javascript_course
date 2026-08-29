@@ -56,10 +56,22 @@ let eventList = [
     })
 ]
 
-function createFilter(category) {
+function createCategoryFilter(category) {
     return function (events) {
         events_copy = [...events];
         return events_copy.filter(event => event.category === category);
+    }
+}
+
+function createEraFilter(era) {
+    return function (events) {
+        events_copy = [...events];
+        switch (era) {
+            case "prehistoric": return events_copy.filter(event => event.year < -10000);
+            case "industrialization":  return events_copy.filter(event => event.year > 1800);
+            case "modern": return events_copy.filter(event => event.year > 1900);
+            default: return events_copy;
+        }
     }
 }
 
@@ -99,36 +111,6 @@ console.log(`Earliest event: ${getEarliestEvent(eventList).title}`);
 console.log("Event counts by category:", countEventsByCategory(eventList));
 eventList.forEach(displayEventInfo);
 
-const controlsForm = document.querySelector("#controls-form");
-
-function handleFilters(event) {
-    if (event.type === "submit") event.preventDefault();
-    
-    const formData = new FormData(controlsForm);
-    const category = formData.get("category");
-    const search = formData.get("search")?.toLowerCase() || "";
-    
-    let filtered = [...eventList];
-    
-    if (category && category !== "all") {
-        const categoryFilter = createFilter(category);
-        filtered = categoryFilter(filtered);
-    }
-    
-    if (search) {
-        filtered = filtered.filter(item => 
-            item.title.toLowerCase().includes(search) || 
-            item.description.toLowerCase().includes(search)
-        );
-    }
-    
-    renderEvents(filtered);
-}
-
-// Event Delegation on the form
-controlsForm.addEventListener("change", handleFilters);
-controlsForm.addEventListener("submit", handleFilters);
-
 function renderEvents(events) {
     eventsContainer.innerHTML = "";
     events.forEach(event => {
@@ -141,13 +123,8 @@ function renderEvents(events) {
             <p>${event.description}</p>
             `;
         
-        // Mission 4: Neural Hover Feedback
-        article.addEventListener('mouseenter', () => {
-            article.classList.add('neural-highlight');
-        });
-        article.addEventListener('mouseleave', () => {
-            article.classList.remove('neural-highlight');
-        });
+        article.addEventListener("mouseenter", () => {article.classList.add("neural-highlight")});
+        article.addEventListener("mouseleave", () => {article.classList.remove("neural-highlight")});
 
         eventsContainer.appendChild(article);
     });
@@ -155,5 +132,40 @@ function renderEvents(events) {
 
 renderEvents(eventList);
 
-
 console.log(`events container: ${eventsContainer}. timeline canvas: ${timelineCanvas}`)
+
+const controlsForm = document.querySelector("#controls-form");
+
+function handleFilters(event) {
+    if (event.type === "submit") {
+        event.preventDefault(); //prevents browser from reloading page
+    }
+
+    const formData = new FormData(controlsForm);
+    const category = formData.get("category");
+    const search = formData.get("search")?.toLowerCase().trim() || "";
+    const era = formData.get("era");
+
+    console.log(`category: ${category}, era: ${era}, search: ${search}`)
+    let filtered = [...eventList];
+
+    if (category && category !== "all") {
+        categoryFilter = createCategoryFilter(category);
+        filtered = categoryFilter(filtered);
+    }
+    if (era && era !== "all") {
+        eraFilter = createEraFilter(era);
+        filtered = eraFilter(filtered);
+    }
+    if (search && search != "") {
+        filtered = filtered.filter(item =>  
+            item.title.toLowerCase().includes(search) ||
+            item.description.toLowerCase().includes(search)
+        );
+    }
+
+    renderEvents(filtered);
+}
+
+controlsForm.addEventListener("change", handleFilters);
+controlsForm.addEventListener("submit", handleFilters);

@@ -56,6 +56,104 @@ let eventList = [
     })
 ]
 
-for (let event of eventList) {
-    event.logInfo()
+function createFilter(category) {
+    return function (events) {
+        events_copy = [...events];
+        return events_copy.filter(event => event.category === category);
+    }
 }
+
+const eventsContainer = document.querySelector("#events-container");
+const timelineCanvas = document.querySelector("#timeline");
+
+function getEarliestEvent(events) {
+    let eventsCopy = [...events];
+    return eventsCopy.reduce((earliest, current) => { if (current.year <= earliest.year) { return current } else {return earliest}}, eventsCopy[0]);
+}
+
+function countEventsByCategory(events) {
+    return events.reduce((counts, current) => {
+        counts[current.category] = (counts[current.category] || 0) +1; 
+        return counts;
+    }, {})
+}
+
+function getEventTitles(events) {
+    return events.map(event => event.title)
+}
+
+function displayEventInfo({title, year, category, sourceUrl, ...others} ) {
+    let prefix = ""
+    switch (category) {
+        case "transport": prefix = "🚀"; break;
+        case "information": prefix = "📖"; break;
+        case "space": prefix = "👩‍🚀"; break;
+        default: prefix = "🛠️";
+    }
+    const urlString = sourceUrl ?? "Source unknown"
+    console.log(`[${prefix}] ${title} (${year}) - Details: id is ${others.id}. Source: ${urlString})`);
+}
+
+// Initialize system log
+console.log(`Earliest event: ${getEarliestEvent(eventList).title}`);
+console.log("Event counts by category:", countEventsByCategory(eventList));
+eventList.forEach(displayEventInfo);
+
+const controlsForm = document.querySelector("#controls-form");
+
+function handleFilters(event) {
+    if (event.type === "submit") event.preventDefault();
+    
+    const formData = new FormData(controlsForm);
+    const category = formData.get("category");
+    const search = formData.get("search")?.toLowerCase() || "";
+    
+    let filtered = [...eventList];
+    
+    if (category && category !== "all") {
+        const categoryFilter = createFilter(category);
+        filtered = categoryFilter(filtered);
+    }
+    
+    if (search) {
+        filtered = filtered.filter(item => 
+            item.title.toLowerCase().includes(search) || 
+            item.description.toLowerCase().includes(search)
+        );
+    }
+    
+    renderEvents(filtered);
+}
+
+// Event Delegation on the form
+controlsForm.addEventListener("change", handleFilters);
+controlsForm.addEventListener("submit", handleFilters);
+
+function renderEvents(events) {
+    eventsContainer.innerHTML = "";
+    events.forEach(event => {
+        const article = document.createElement("article");
+        article.classList.add('event');
+        article.setAttribute('data-id', event.id);
+        article.innerHTML = `
+            <h3>${event.title}</h3>
+            <time>${event.year}</time>
+            <p>${event.description}</p>
+            `;
+        
+        // Mission 4: Neural Hover Feedback
+        article.addEventListener('mouseenter', () => {
+            article.classList.add('neural-highlight');
+        });
+        article.addEventListener('mouseleave', () => {
+            article.classList.remove('neural-highlight');
+        });
+
+        eventsContainer.appendChild(article);
+    });
+}
+
+renderEvents(eventList);
+
+
+console.log(`events container: ${eventsContainer}. timeline canvas: ${timelineCanvas}`)

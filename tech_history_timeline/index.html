@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Tech History Timeline</title>
-    <script src="js/basics.js" defer></script>
+    <script src="timeline.js" defer></script>
 </head>
 
 <body>
@@ -16,12 +16,20 @@
     </header>
 
     <nav>
-        <select id="era-select">
-            <option value="" disabled selected>Filter by Era</option>
-        </select>
-        <select id="category-select">
-            <option value="" disabled selected>Filter by Category</option>
-        </select>
+        <form id="controls-form">
+            <select id="era-select" name="era">
+                <option value="" disabled selected>Filter by Era</option>
+                <option value="all">All Eras</option>
+            </select>
+            <select id="category-select" name="category">
+                <option value="all">All Categories</option>
+                <option value="transport">Transport</option>
+                <option value="information">Information</option>
+                <option value="space">Space</option>
+            </select>
+            <input type="text" id="search-input" name="search" placeholder="Search fragments...">
+            <button type="submit">Scan Timeline</button>
+        </form>
     </nav>
 
     <main>

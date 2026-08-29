@@ -94,48 +94,48 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
         - [x] Parameters, arguments, return values
         - [x] Scope and closures
         - [x] Higher-order functions
-    - [ ] Data Structures
+    - [x] Data Structures
         - [x] Arrays and array methods (map, filter, reduce, find, etc.)
         - [x] Objects and object literals
         - [x] Destructuring (arrays and objects)
-        - [ ] Spread and rest operators
+        - [x] Spread and rest operators
     - **🎯 Project: Tech History Timeline — Mission: Logic Stabilization**
         - [x] **Mission 1: Fragment Data Structure**
           - Create a JavaScript file `timeline.js`.
           - Create an `Event` **class** with a constructor to define the structure of a historical fragment (Classes/OOP).
           - Define an array of **5 historical fragments** using your class with properties: `id`, `title`, `year`, `description`, `category`, and an optional `sourceUrl`.
           - Use template literals to format fragment descriptions with emojis for the terminal.
-        - [ ] **Mission 2: Filtering the Stream**
+        - [x] **Mission 2: Filtering the Stream**
           - Write a function `createFilter(category)` that returns a function (Closure) which filters fragments by that category.
           - Use the **spread operator** (`...`) to create a copy of the fragments array before processing.
           - Write a function `getEventTitles(events)` that uses `.map()` to extract titles for the index.
-        - [ ] **Mission 3: Temporal Statistics**
+        - [x] **Mission 3: Temporal Statistics**
           - Write a function `getEarliestEvent(events)` that uses `.reduce()` to locate the oldest fragment in the stream.
           - Write a function `countEventsByCategory(events)` that returns an object with category distribution counts.
-        - [ ] **Mission 4: Dynamic Terminal Display**
+        - [x] **Mission 4: Dynamic Terminal Display**
           - Write a function `displayEventInfo(event)` that:
             - Uses **destructuring** and the **rest operator** (`...otherProps`) to parse fragment data.
             - Uses **optional chaining** and **nullish coalescing** (e.g., `event?.sourceUrl ?? 'No source'`) to handle missing temporal links.
             - Uses a **switch statement** to return a custom emoji prefix based on the `category`.
             - Logs the final formatted fragment to the system log.
-    - [ ] ES6+ Features
-        - [ ] Modules (import/export)
-        - [ ] Classes and OOP in JavaScript
+    - [x] ES6+ Features
+        - [x] Modules (import/export)
+        - [x] Classes and OOP in JavaScript
         - [ ] Promises and async/await
-        - [ ] Optional chaining and nullish coalescing
+        - [x] Optional chaining and nullish coalescing
 
 ---
 
-- [ ] Chapter 5: Working with the DOM - *Establishing the Neural Link*
-    - [ ] DOM Basics
-        - [ ] Selecting elements (getElementById, querySelector, etc.)
-        - [ ] Traversing the DOM
-        - [ ] Modifying elements (content, attributes, styles)
+- [x] Chapter 5: Working with the DOM - *Establishing the Neural Link*
+    - [x] DOM Basics
+        - [x] Selecting elements (getElementById, querySelector, etc.)
+        - [x] Traversing the DOM
+        - [x] Modifying elements (content, attributes, styles)
     - **🎯 Project: Tech History Timeline — Mission: Interface Activation**
-        - [ ] **Mission 1: Selecting Terminal Components**
+        - [x] **Mission 1: Selecting Terminal Components**
           - Use `querySelector` and `getElementById` to link your code to the `#events-container` and `#timeline` projector.
           - Log these elements to verify the link is active.
-        - [ ] **Mission 2: Dynamic Fragment Projection**
+        - [x] **Mission 2: Dynamic Fragment Projection**
           - Write a function `renderEvents(events)` that:
             - Clears the `#events-container` display.
             - Creates `<article>` elements for each fragment, **traversing the DOM** to ensure correct placement.

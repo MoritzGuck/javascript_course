@@ -1,7 +1,7 @@
 ---
 description: The teaching assistant for javascript
 mode: subagent
-model: google/gemini-flash-latest
+model: google/gemini-3.8-flash
 temperature: 0.1
 ---
 

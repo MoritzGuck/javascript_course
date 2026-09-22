@@ -1,3 +1,5 @@
+import { fetchWikipediaSummary } from "./apiServices.js";
+
 class Event {
     constructor({ title, year, description, category, id, sourceUrl }) {
         this.title = title;
@@ -36,7 +38,7 @@ let eventList = [
         description: "Brothers Wright",
         category: "transport",
         id: 3,
-        sourceUrl: "#https://en.wikipedia.org/wiki/Wright_brothers"
+        sourceUrl: "https://en.wikipedia.org/wiki/Wright_brothers"
     }),
     new Event({
         title: "Moon landing",
@@ -116,21 +118,32 @@ function renderEvents(events) {
     events.forEach(event => {
         const article = document.createElement("article");
         article.classList.add('event');
+        eventsContainer.appendChild(article);
         article.setAttribute('data-id', event.id);
         article.innerHTML = `
             <h3>${event.title}</h3>
             <time>${event.year}</time>
-            <p>${event.description}</p>
+            <em>📡 Decrypting Wikipedia fragment...</em>
             `;
-        
+
         article.addEventListener("mouseenter", () => {article.classList.add("neural-highlight")});
         article.addEventListener("mouseleave", () => {article.classList.remove("neural-highlight")});
 
-        eventsContainer.appendChild(article);
+        const wikiPathArray = event.sourceUrl.split("/");
+        let wikiPath = wikiPathArray.at(-1);
+
+        fetchWikipediaSummary(wikiPath).then(eventSummary => {
+            article.innerHTML = `
+                <h3>${event.title}</h3>
+                <time>${event.year}</time>
+                <p>${eventSummary.extract}</p>
+                `;
+
+        }).catch(error => {console.log(`could not load event ${event.title}`)}
+
+        )
     });
 }
-
-renderEvents(eventList);
 
 console.log(`events container: ${eventsContainer}. timeline canvas: ${timelineCanvas}`)
 
@@ -169,3 +182,67 @@ function handleFilters(event) {
 
 controlsForm.addEventListener("change", handleFilters);
 controlsForm.addEventListener("submit", handleFilters);
+
+function fetchEventsWithDelay() { // returns the *Promise* immediately, but not the result
+    const eventListCopy = new Promise((resolve) => { // when using Promise, you pass a resolve function, that has the purpose of storing the eventual output. 
+        // The promise is like a status ticker of a pizza delivery that shows you whether it is still pending, processing or fulfilled ("delivered").
+        setTimeout(() => {
+            resolve([...eventList]) // here you actually use the resolve function you passed.
+        }, 1000)
+    });
+    return eventListCopy;
+}
+
+/* fetchEventsWithDelay().then(eventList => { // "then" attaches the callback function in the parameters to the promise. When the promise changes to fulfilled, it triggers the callback.
+    console.log(`events loaded? First list item: ${eventList[0].title}`);
+}); */
+
+
+async function loadAndRenderEvents() {
+    try {
+        let events = await fetchEventsWithDelay();
+        renderEvents(events);
+    } catch (error) {
+        console.log(`Rendering events failed: ${error}`)
+    }
+}
+
+loadAndRenderEvents()
+
+function fetchTransportEvents(events) {
+    return new Promise(resolve => 
+        setTimeout(() => {
+                let transportFilter = createCategoryFilter("transport");
+                let eventList = transportFilter(events);
+                resolve(eventList);
+            }, 800)
+    )
+}
+
+function fetchInformationEvents(events) {
+    return new Promise(resolve => 
+        setTimeout(() => {
+                let transportFilter = createCategoryFilter("information");
+                let eventList = transportFilter(events);
+                resolve(eventList);
+            }, 800)
+    )
+}
+
+/*
+combinedEvents = Promise.all([fetchTransportEvents(eventList), fetchInformationEvents(eventList)])
+    .then(([transportEvents, infoEvents]) => {
+        const combined = [...transportEvents, ...infoEvents];
+        renderEvents(combined);
+    });
+
+*/
+
+
+
+fetchWikipediaSummary("Moon_landing").then(results => {
+    console.log(`wiki result: ${results.title}, ${results.extract}`)
+})
+fetchWikipediaSummary("This_Page_Definitely_Does_Not_Exist_99999").then(results => {
+    console.log(`wiki result: ${results.title}, ${results.extract}`)
+}).catch((error) => console.log(error))

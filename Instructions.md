@@ -162,66 +162,66 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Chapter 6: Asynchronous JavaScript - *Temporal Synchronization*
-    - [ ] Callbacks and callback hell
-    - [ ] Promises
-        - [ ] Creating and consuming promises
-        - [ ] Promise chaining (then, catch, finally)
-        - [ ] Promise static methods (all, race, allSettled)
+- [x] Chapter 6: Asynchronous JavaScript - *Temporal Synchronization*
+    - [x] Callbacks and callback hell
+    - [x] Promises
+        - [x] Creating and consuming promises
+        - [x] Promise chaining (then, catch, finally)
+        - [x] Promise static methods (all, race, allSettled)
     - **🎯 Project: Tech History Timeline — Mission: Signal Buffering**
-        - [ ] **Mission 1: Simulating Fragment Fetching**
+        - [x] **Mission 1: Simulating Fragment Fetching**
           - Create a function `fetchEventsWithDelay()` that uses `setTimeout` to simulate the delay of retrieving fragments from the deep archives.
           - Return a Promise that resolves with your fragment data after 1 second.
-        - [ ] **Mission 2: Sequence Calibration**
+        - [x] **Mission 2: Sequence Calibration**
           - Create a function `loadAndRenderEvents()` that:
             - Calls `fetchEventsWithDelay()`
             - Uses `.then()` to call `renderEvents()` once the data arrives.
             - Uses `.catch()` to handle signal interference (errors).
-        - [ ] **Mission 3: Parallel Fragment Recovery**
+        - [x] **Mission 3: Parallel Fragment Recovery**
           - Create multiple Promise-based functions to fetch different categories of fragments.
           - Use `Promise.all()` to load all categories simultaneously and merge the results.
           - Experiment with `Promise.race()` to see which sector of the archives responds fastest.
-    - [ ] Async/Await
-        - [ ] async functions
-        - [ ] await operator
-        - [ ] Error handling with try/catch
+    - [x] Async/Await
+        - [x] async functions
+        - [x] await operator
+        - [x] Error handling with try/catch
     - **🎯 Project: Tech History Timeline — Mission: Async Protocol Refactor**
-        - [ ] **Mission 4: Streamlined Retrieval**
+        - [x] **Mission 4: Streamlined Retrieval**
           - Rewrite `loadAndRenderEvents()` using `async/await` syntax for better temporal clarity.
           - Add try/catch to safeguard against archive failures.
-    - [ ] Fetch API
-        - [ ] Making HTTP requests
-        - [ ] Handling responses and errors
-        - [ ] Working with JSON data
+    - [x] Fetch API
+        - [x] Making HTTP requests
+        - [x] Handling responses and errors
+        - [x] Working with JSON data
 
 ---
 
-- [ ] Chapter 7: Working with APIs - *Recovering the Archives*
-    - [ ] Understanding RESTful APIs
-        - [ ] REST principles
-        - [ ] HTTP methods and status codes
-        - [ ] Authentication (API keys, tokens)
-    - [ ] Consuming APIs
-        - [ ] Fetching data from public APIs
-        - [ ] Handling loading states and errors
-        - [ ] Displaying API data in the DOM
+- [x] Chapter 7: Working with APIs - *Recovering the Archives*
+    - [x] Understanding RESTful APIs
+        - [x] REST principles
+        - [x] HTTP methods and status codes
+        - [x] Authentication (API keys, tokens)
+    - [x] Consuming APIs
+        - [x] Fetching data from public APIs
+        - [x] Handling loading states and errors
+        - [x] Displaying API data in the DOM
     - **🎯 Project: Tech History Timeline — Mission: Real-World Linkage**
-        - [ ] **Mission 1: Wikipedia Archive Integration**
+        - [x] **Mission 1: Wikipedia Archive Integration**
           - Use the `fetch` API to request data from the Wikipedia archives for a specific historical event (e.g., "First Moon Landing").
           - Parse the JSON response and extract the summary text to restore the fragment.
-        - [ ] **Mission 2: Resilience Protocols**
+        - [x] **Mission 2: Resilience Protocols**
           - Enhance your fetch call with proper error handling:
             - Check `response.ok` and handle specific **HTTP status codes** (e.g., 404, 500).
             - Use `try/catch` to handle network failures.
           - Display user-friendly error messages on the terminal if a fragment cannot be recovered.
-        - [ ] **Mission 3: Transmission Status**
+        - [x] **Mission 3: Transmission Status**
           - Add a loading spinner (or "Synchronizing..." text) that appears while data is being fetched.
           - Hide it when the fragment is successfully projected or if an error occurs.
-    - [ ] Building a simple API client
-        - [ ] Creating a reusable API service
-        - [ ] Error handling strategies
+    - [x] Building a simple API client
+        - [x] Creating a reusable API service
+        - [x] Error handling strategies
     - **🎯 Project: Tech History Timeline — Mission: Modular Archive Service**
-        - [ ] **Mission 4: Archive Service Module**
+        - [x] **Mission 4: Archive Service Module**
           - Create a reusable module `apiService.js` with a function `fetchWikipediaSummary(title)` that encapsulates the retrieval logic.
           - Import and use this module in your main terminal application.
 

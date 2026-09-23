@@ -228,12 +228,12 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 ---
 
 - [ ] Chapter 8: Data Visualization - *Activating the Hologram*
-    - [ ] Canvas API basics
+    - [x] Canvas API basics
     - **🎯 Project: Tech History Timeline — Mission: Holographic Mapping**
-        - [ ] **Mission 1: Mapping the Timeline Line**
+        - [x] **Mission 1: Mapping the Timeline Line**
           - Use the Canvas API to draw a horizontal temporal axis with year markers.
           - Position fragment dots along the axis based on their historical year.
-        - [ ] **Mission 2: Visual Fragment Markers**
+        - [x] **Mission 2: Visual Fragment Markers**
           - Draw circles or rectangles on the canvas at positions corresponding to fragment dates.
           - Add tooltips or custom overlays showing fragment info when the scanner (cursor) hovers over them.
     - [ ] Introduction to Chart.js or D3.js

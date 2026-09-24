@@ -227,7 +227,7 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Chapter 8: Data Visualization - *Activating the Hologram*
+- [x] Chapter 8: Data Visualization - *Activating the Hologram*
     - [x] Canvas API basics
     - **🎯 Project: Tech History Timeline — Mission: Holographic Mapping**
         - [x] **Mission 1: Mapping the Timeline Line**
@@ -236,18 +236,18 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
         - [x] **Mission 2: Visual Fragment Markers**
           - Draw circles or rectangles on the canvas at positions corresponding to fragment dates.
           - Add tooltips or custom overlays showing fragment info when the scanner (cursor) hovers over them.
-    - [ ] Introduction to Chart.js or D3.js
-        - [ ] Creating simple charts (bar, line, pie)
-        - [ ] Customizing charts
-        - [ ] Handling dynamic data
+    - [x] Introduction to Chart.js or D3.js
+        - [x] Creating simple charts (bar, line, pie)
+        - [x] Customizing charts
+        - [x] Handling dynamic data
     - **🎯 Project: Tech History Timeline — Mission: Statistical Visualization**
-        - [ ] **Mission 3: Category Distribution Chart**
+        - [x] **Mission 3: Category Distribution Chart**
           - Install Chart.js via CDN or npm.
           - Create a bar chart showing the number of fragments per category to analyze archive health.
-        - [ ] **Mission 4: Dynamic Update Stream**
+        - [x] **Mission 4: Dynamic Update Stream**
           - Update the chart in real-time when the user filters fragments by category.
           - Animate the chart update for a smooth holographic transition.
-    - [ ] Visualizing data from APIs
+    - [x] Visualizing data from APIs
 
 ---
 

@@ -1,0 +1,20 @@
+{
+  "name": "javascript_course",
+  "version": "1.0.0",
+  "description": "A javascript course made by AI. This course teaches you to write websites in JavaScript through an immersive sci-fi narrative where you play the role of a Time Archaeologist aboard the Chrono-Vault.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite tech_history_timeline", 
+    "build": "vite build tech_history_timeline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "chart.js": "^4.5.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
+  }
+}

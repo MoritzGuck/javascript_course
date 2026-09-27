@@ -251,33 +251,33 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Chapter 9: Modern JavaScript Development - *Optimizing the Protocol*
-    - [ ] Modules and Modular Code
-        - [ ] ES Modules
-        - [ ] Module patterns
+- [x] Chapter 9: Modern JavaScript Development - *Optimizing the Protocol*
+    - [x] Modules and Modular Code
+        - [x] ES Modules
+        - [x] Module patterns
     - **🎯 Project: Tech History Timeline — Mission: Modular Architecture**
-        - [ ] **Mission 1: Modular Timeline Code**
+        - [x] **Mission 1: Modular Timeline Code**
           - Split your terminal code into mission-specific modules:
             - `events.js` - fragment data and filtering logic.
             - `rendering.js` - interface rendering functions.
             - `api.js` - archive service functions.
           - Use ES6 import/export to establish links between modules.
-    - [ ] npm and Package Management
-        - [ ] Initializing a project
-        - [ ] Installing and using packages
-        - [ ] package.json and package-lock.json
+    - [x] npm and Package Management
+        - [x] Initializing a project
+        - [x] Installing and using packages
+        - [x] package.json and package-lock.json
     - **🎯 Project: Tech History Timeline — Mission: System Initialization**
-        - [ ] **Mission 2: npm Project Setup**
+        - [x] **Mission 2: npm Project Setup**
           - Initialize a new npm project within the vault.
           - Create a `package.json` with automation scripts for development.
-        - [ ] **Mission 3: Integrated Dependency Management**
+        - [x] **Mission 3: Integrated Dependency Management**
           - Install Chart.js as a local dependency.
           - Replace your old CDN links with the npm-managed version.
-    - [ ] Bundlers (Optional)
-        - [ ] Introduction to webpack or vite
-        - [ ] Basic configuration
+    - [x] Bundlers (Optional)
+        - [x] Introduction to webpack or vite
+        - [x] Basic configuration
     - **🎯 Project: Tech History Timeline — Mission: Warp Speed with Vite**
-        - [ ] **Mission 4: Vite Deployment Setup**
+        - [x] **Mission 4: Vite Deployment Setup**
           - Initialize a Vite project to accelerate the interface development.
           - Configure Vite to serve your fragments, styles, and logic.
 

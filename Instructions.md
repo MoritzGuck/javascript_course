@@ -284,31 +284,29 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 ---
 
 - [ ] Chapter 10: Frontend Frameworks - *Advanced UI Components*
-    - [ ] React
-        - [ ] Components and JSX
-        - **🎯 Project: Tech History Timeline — Mission: React Portal**
+    - [ ] Svelte
+        - [ ] Components and Svelte file anatomy (<script>, markup, <style>)
+        - **🎯 Project: Tech History Timeline — Mission: Svelte Portal**
             - [ ] **Mission 1: Component Architecture**
-              - Initialize a React portal and define the basic component tree.
-              - Create a `Timeline` component to encapsulate the holographic display.
-        - [ ] State and props
+              - Configure Vite for Svelte and assemble the component tree.
+              - Create a `Timeline.svelte` component to encapsulate the holographic display.
+        - [ ] Reactive state and props ($state, $props)
         - **🎯 Project: Tech History Timeline — Mission: Reusable Components**
             - [ ] **Mission 2: Fragment Card Component**
-              - Create a reusable `EventCard` component that accepts fragment data as props.
-              - Style it to match the Chrono-Vault's futuristic aesthetic.
-        - [ ] Hooks (useState, useEffect)
+              - Create a reusable `EventCard.svelte` component that accepts fragment data as props.
+              - Style it using scoped CSS to match the Chrono-Vault's futuristic aesthetic.
+        - [ ] Reactivity and lifecycle ($derived, $effect, onMount)
         - **🎯 Project: Tech History Timeline — Mission: State Management**
             - [ ] **Mission 3: Temporal State Control**
-              - Use `useState` to manage active fragments and filter settings.
+              - Use reactive state to manage active fragments and filter settings.
               - Update the display automatically when the user interacts with the controls.
             - [ ] **Mission 4: Effect-Based Synchronization**
-              - Use `useEffect` to trigger archive fetches when a fragment is selected for detail analysis.
+              - Use `$effect` / `onMount` to trigger archive fetches when a fragment is selected for detail analysis.
               - Display the recovered summary in a modal overlay.
-        - [ ] Building a simple React app
-    - [ ] Vue.js
-        - [ ] Templates and directives
-        - [ ] Components and props
-        - [ ] State management
-        - [ ] Building a simple Vue app
+        - [ ] Building a simple Svelte app
+    - [ ] Other Framework Ecosystems (React, Vue overview)
+        - [ ] Declarative vs imperative paradigms
+        - [ ] Virtual DOM vs compiler-based approaches
 
 ---
 

@@ -22,8 +22,8 @@ The student is a Time Archaeologist aboard the Chrono-Vault, a starship that pre
 7. **Working with APIs**: Recovering lost data from the Wikipedia archives.
 8. **Data Visualization**: Activating the holographic timeline display.
 9. **Modern JS Development**: Optimizing the repair protocol with modules and tools.
-10. **Frontend Frameworks**: Building advanced components for the Chrono-Vault.
-11. **Backend with Node.js**: Creating a central hub for history data.
-12. **Full-Stack Application**: Integrating the entire system for a permanent fix.
-13. **Deployment**: Uploading the restored timeline to the global network.
-14. **Testing**: Verifying the temporal stability of our repairs.
+10. **Testing**: Verifying the temporal stability of our repairs with Vitest.
+11. **Frontend Frameworks & TypeScript**: Building advanced typed components with Svelte for the Chrono-Vault.
+12. **Backend with Node.js**: Creating a central hub for history data.
+13. **Full-Stack Application**: Integrating the entire system for a permanent fix.
+14. **Deployment**: Uploading the restored timeline to the global network.

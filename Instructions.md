@@ -283,20 +283,20 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Chapter 10: Testing - *Verifying Stability*
+- [x] Chapter 10: Testing - *Verifying Stability*
     - [x] Introduction to testing in JavaScript & modern tooling
     - [x] Vitest basics (test runner, assertions, watch mode)
     - **🎯 Project: Tech History Timeline — Mission: Diagnostic Calibration**
         - [x] **Mission 1: Diagnostic Suite Setup**
           - Install Vitest and add test scripts in `package.json`.
           - Write a unit test to verify the fragment filtering logic.
-        - [ ] **Mission 2: Utility Verification**
+        - [x] **Mission 2: Utility Verification**
           - Write unit tests for analysis functions (`getEarliestEvent`, `countEventsByCategory`).
           - Test edge cases like empty archives or corrupted data.
-        - [ ] **Mission 3: Async & Archive Mocking**
+        - [x] **Mission 3: Async & Archive Mocking**
           - Write tests for asynchronous retrieval functions.
           - Use Vitest (`vi.fn()`, `vi.spyOn()`) to mock Wikipedia archive responses for reliable testing.
-    - [ ] Testing API calls
+    - [x] Testing API calls
 
 ---
 

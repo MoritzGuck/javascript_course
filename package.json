@@ -4,8 +4,10 @@
   "description": "A javascript course made by AI. This course teaches you to write websites in JavaScript through an immersive sci-fi narrative where you play the role of a Time Archaeologist aboard the Chrono-Vault.",
   "main": "index.js",
   "scripts": {
-    "dev": "vite tech_history_timeline", 
-    "build": "vite build tech_history_timeline"
+    "dev": "vite tech_history_timeline",
+    "build": "vite build tech_history_timeline",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "chart.js": "^4.5.1"
   },
   "devDependencies": {
-    "vite": "^8.3.1"
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
   }
 }

@@ -75,8 +75,6 @@ function createEraFilter(era) {
     }
 }
 
-const eventsContainer = document.querySelector("#events-container");
-const timelineCanvas = document.querySelector("#timeline");
 
 function getEarliestEvent(events) {
     let eventsCopy = [...events];
@@ -96,4 +94,4 @@ function getEventTitles(events) {
 
 
 
-export {Event, eventList, createCategoryFilter, createEraFilter, getEarliestEvent, countEventsByCategory, getEventTitles, eventsContainer}
+export {Event, eventList, createCategoryFilter, createEraFilter, getEarliestEvent, countEventsByCategory, getEventTitles}

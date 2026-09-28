@@ -1,7 +1,10 @@
-import { eventList, countEventsByCategory, eventsContainer } from "./events.js";
+import { eventList, countEventsByCategory } from "./events.js";
 import { fetchWikipediaSummary } from "./api.js";
 
 import { Chart } from "chart.js/auto";
+
+const eventsContainer = document.querySelector("#events-container");
+
 
 function renderEvents(events) {
     eventsContainer.innerHTML = "";

@@ -1,4 +1,4 @@
-import { Event, eventList, createCategoryFilter, createEraFilter, getEarliestEvent, countEventsByCategory, getEventTitles} from "./events.js";
+import { eventList, createCategoryFilter, createEraFilter} from "./events.js";
 import { renderEvents, initChart, updateChart, drawTimeline } from "./rendering.js";
 
 const controlsForm = document.querySelector("#controls-form");

@@ -283,17 +283,37 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Chapter 10: Frontend Frameworks - *Advanced UI Components*
-    - [ ] Svelte
-        - [ ] Components and Svelte file anatomy (<script>, markup, <style>)
+- [ ] Chapter 10: Testing - *Verifying Stability*
+    - [x] Introduction to testing in JavaScript & modern tooling
+    - [x] Vitest basics (test runner, assertions, watch mode)
+    - **🎯 Project: Tech History Timeline — Mission: Diagnostic Calibration**
+        - [x] **Mission 1: Diagnostic Suite Setup**
+          - Install Vitest and add test scripts in `package.json`.
+          - Write a unit test to verify the fragment filtering logic.
+        - [ ] **Mission 2: Utility Verification**
+          - Write unit tests for analysis functions (`getEarliestEvent`, `countEventsByCategory`).
+          - Test edge cases like empty archives or corrupted data.
+        - [ ] **Mission 3: Async & Archive Mocking**
+          - Write tests for asynchronous retrieval functions.
+          - Use Vitest (`vi.fn()`, `vi.spyOn()`) to mock Wikipedia archive responses for reliable testing.
+    - [ ] Testing API calls
+
+---
+
+- [ ] Chapter 11: Frontend Frameworks & TypeScript - *Advanced UI Components*
+    - [ ] TypeScript Fundamentals for Frontend
+        - [ ] Why TypeScript: Type safety, interfaces, types vs. interfaces
+        - [ ] Defining Fragment and API response types
+    - [ ] Svelte with TypeScript
+        - [ ] Components and Svelte file anatomy (<script lang="ts">, markup, <style>)
         - **🎯 Project: Tech History Timeline — Mission: Svelte Portal**
             - [ ] **Mission 1: Component Architecture**
-              - Configure Vite for Svelte and assemble the component tree.
-              - Create a `Timeline.svelte` component to encapsulate the holographic display.
-        - [ ] Reactive state and props ($state, $props)
+              - Configure Vite for Svelte and TypeScript, assembling the component tree.
+              - Create a typed `Timeline.svelte` component to encapsulate the holographic display.
+        - [ ] Reactive state and props with TS ($state, $props)
         - **🎯 Project: Tech History Timeline — Mission: Reusable Components**
             - [ ] **Mission 2: Fragment Card Component**
-              - Create a reusable `EventCard.svelte` component that accepts fragment data as props.
+              - Create a reusable `EventCard.svelte` component that accepts typed fragment data as props.
               - Style it using scoped CSS to match the Chrono-Vault's futuristic aesthetic.
         - [ ] Reactivity and lifecycle ($derived, $effect, onMount)
         - **🎯 Project: Tech History Timeline — Mission: State Management**
@@ -303,14 +323,14 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
             - [ ] **Mission 4: Effect-Based Synchronization**
               - Use `$effect` / `onMount` to trigger archive fetches when a fragment is selected for detail analysis.
               - Display the recovered summary in a modal overlay.
-        - [ ] Building a simple Svelte app
+        - [ ] Building a simple Svelte + TypeScript app
     - [ ] Other Framework Ecosystems (React, Vue overview)
         - [ ] Declarative vs imperative paradigms
         - [ ] Virtual DOM vs compiler-based approaches
 
 ---
 
-- [ ] Chapter 11: Backend with Node.js - *Central Hub Construction*
+- [ ] Chapter 12: Backend with Node.js - *Central Hub Construction*
     - [ ] Node.js basics
         - [ ] Running JavaScript on the server
         - [ ] Node.js modules
@@ -341,7 +361,7 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Chapter 12: Full-Stack Application - *System Integration*
+- [ ] Chapter 13: Full-Stack Application - *System Integration*
     - [ ] Connecting frontend and backend
     - **🎯 Project: Tech History Timeline — Mission: End-to-End Linkage**
         - [ ] **Mission 1: Neural Link to the Hub**
@@ -363,7 +383,7 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Chapter 13: Deployment - *Going Global*
+- [ ] Chapter 14: Deployment - *Going Global*
     - [ ] Static site hosting (GitHub Pages, Netlify, Vercel)
     - **🎯 Project: Tech History Timeline — Mission: Global Uplink**
         - [ ] **Mission 1: Deploy Terminal to Netlify**
@@ -385,25 +405,3 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
         - [ ] **Mission 4: Continuous Integration**
           - Set up a GitHub Actions workflow to run diagnostics (tests) on every push.
           - Enable automatic deployment to Netlify once diagnostics pass.
-
----
-
-- [ ] Chapter 14: Testing - *Verifying Stability*
-    - [ ] Introduction to testing in JavaScript
-    - [ ] Jest basics
-    - **🎯 Project: Tech History Timeline — Mission: Diagnostic Calibration**
-        - [ ] **Mission 1: Diagnostic Suite Setup**
-          - Install Jest and initialize the testing suite.
-          - Write a test to verify the fragment filtering logic.
-        - [ ] **Mission 2: Utility Verification**
-          - Write tests for analysis functions (`getEarliestEvent`, `countEventsByCategory`).
-          - Test edge cases like empty archives or corrupted data.
-        - [ ] **Mission 3: Async & Archive Mocking**
-          - Write tests for asynchronous retrieval functions.
-          - Use Jest to **mock Wikipedia archive responses** for reliable testing.
-    - [ ] Testing DOM manipulations
-    - **🎯 Project: Tech History Timeline — Mission: Interface Stress Test**
-        - [ ] **Mission 4: DOM Interaction Testing**
-          - Use Jest with jsdom to verify the `renderEvents` protocol.
-          - Ensure the correct number of fragments are projected with the right metadata.
-    - [ ] Testing API calls

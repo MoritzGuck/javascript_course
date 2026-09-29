@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite tech_history_timeline",
     "build": "vite build tech_history_timeline",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -17,6 +18,11 @@
     "chart.js": "^4.5.1"
   },
   "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@tsconfig/svelte": "^5.0.8",
+    "svelte": "^5.57.1",
+    "svelte-check": "^4.7.6",
+    "typescript": "^5.9.3",
     "vite": "^8.3.1",
     "vitest": "^5.0.2"
   }

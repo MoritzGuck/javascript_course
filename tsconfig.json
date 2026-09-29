@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "isolatedModules": true,
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "strict": true
+  },
+  "include": ["tech_history_timeline/**/*", "vite.config.ts", "svelte.config.js"]
+}

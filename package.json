@@ -4,8 +4,8 @@
   "description": "A javascript course made by AI. This course teaches you to write websites in JavaScript through an immersive sci-fi narrative where you play the role of a Time Archaeologist aboard the Chrono-Vault.",
   "main": "index.js",
   "scripts": {
-    "dev": "vite tech_history_timeline",
-    "build": "vite build tech_history_timeline",
+    "dev": "vite",
+    "build": "vite build",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run",
     "test:watch": "vitest"

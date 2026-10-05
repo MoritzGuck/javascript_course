@@ -2,6 +2,7 @@
     import { eventList } from "../events";
     import type { HistoricalEvent, CategoryFilter, Era } from "../types";
     import EventCard from "./components/EventCard.svelte";
+    import Timeline from "./components/Timeline.svelte";
 
     let selectedCategory = $state<CategoryFilter>("all");
     let selectedEra = $state<Era>("all");
@@ -68,6 +69,11 @@
 </nav>
 
 <main>
+    <Timeline 
+        events={filteredEvents}
+        {selectedEvent}
+        onSelect={(event => (selectedEvent = event))}
+    />
     <div id="events-container">
         {#each filteredEvents as event (event.id)}
             <EventCard

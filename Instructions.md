@@ -301,23 +301,23 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 ---
 
 - [ ] Chapter 11: Frontend Frameworks & TypeScript - *Advanced UI Components*
-    - [ ] TypeScript Fundamentals for Frontend
-        - [ ] Why TypeScript: Type safety, interfaces, types vs. interfaces
-        - [ ] Defining Fragment and API response types
+    - [x] TypeScript Fundamentals for Frontend
+        - [x] Why TypeScript: Type safety, interfaces, types vs. interfaces
+        - [x] Defining Fragment and API response types
     - [ ] Svelte with TypeScript
-        - [ ] Components and Svelte file anatomy (<script lang="ts">, markup, <style>)
+        - [x] Components and Svelte file anatomy (<script lang="ts">, markup, <style>)
         - **🎯 Project: Tech History Timeline — Mission: Svelte Portal**
             - [ ] **Mission 1: Component Architecture**
               - Configure Vite for Svelte and TypeScript, assembling the component tree.
               - Create a typed `Timeline.svelte` component to encapsulate the holographic display.
-        - [ ] Reactive state and props with TS ($state, $props)
+        - [x] Reactive state and props with TS ($state, $props)
         - **🎯 Project: Tech History Timeline — Mission: Reusable Components**
-            - [ ] **Mission 2: Fragment Card Component**
+            - [x] **Mission 2: Fragment Card Component**
               - Create a reusable `EventCard.svelte` component that accepts typed fragment data as props.
               - Style it using scoped CSS to match the Chrono-Vault's futuristic aesthetic.
         - [ ] Reactivity and lifecycle ($derived, $effect, onMount)
         - **🎯 Project: Tech History Timeline — Mission: State Management**
-            - [ ] **Mission 3: Temporal State Control**
+            - [x] **Mission 3: Temporal State Control**
               - Use reactive state to manage active fragments and filter settings.
               - Update the display automatically when the user interacts with the controls.
             - [ ] **Mission 4: Effect-Based Synchronization**
@@ -330,7 +330,36 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Chapter 12: Backend with Node.js - *Central Hub Construction*
+- [ ] Chapter 12: React & TypeScript — *Quantum Recalibration (Svelte to React Migration)*
+    - [ ] React Core Concepts vs. Svelte
+        - [ ] Virtual DOM, Declarative UI & JSX/TSX syntax
+        - [ ] Components, Props & TypeScript interfaces (`FC`, Props)
+    - **🎯 Project: Tech History Timeline (React) — Mission: React Uplink Setup**
+        - [ ] **Mission 1: React Project Scaffolding**
+          - Set up `tech_history_timeline_react/` with Vite, React, and TypeScript.
+          - Port the base HTML/CSS layout into the React app shell (`App.tsx`).
+    - [ ] State & Derived Values in React
+        - [ ] `useState` vs. Svelte `$state`
+        - [ ] `useMemo` & filtered lists vs. Svelte `$derived`
+    - **🎯 Project: Tech History Timeline (React) — Mission: Filtering & Cards**
+        - [ ] **Mission 2: EventCard & Fragment List**
+          - Create `EventCard.tsx` with typed props.
+          - Replicate search and category/era filtering using `useState` and `useMemo`.
+    - [ ] Side Effects & Canvas Interop
+        - [ ] `useEffect` and `useRef` vs. Svelte `$effect` & `bind:this`
+    - **🎯 Project: Tech History Timeline (React) — Mission: Holographic Canvas Port**
+        - [ ] **Mission 3: Interactive Timeline Projector**
+          - Port `Timeline.svelte` to `Timeline.tsx` using `useRef<HTMLCanvasElement>` and `useEffect`.
+          - Implement hover and selection state management.
+    - [ ] Modals & Async Data Retrieval
+        - [ ] Side effects, async lifecycle & cleanup in React
+    - **🎯 Project: Tech History Timeline (React) — Mission: Detail Modal & Wikipedia Sync**
+        - [ ] **Mission 4: Fragment Inspection Modal**
+          - Implement `DetailModal.tsx` fetching Wikipedia summaries on event selection.
+
+---
+
+- [ ] Chapter 13: Backend with Node.js - *Central Hub Construction*
     - [ ] Node.js basics
         - [ ] Running JavaScript on the server
         - [ ] Node.js modules
@@ -361,7 +390,7 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Chapter 13: Full-Stack Application - *System Integration*
+- [ ] Chapter 14: Full-Stack Application - *System Integration*
     - [ ] Connecting frontend and backend
     - **🎯 Project: Tech History Timeline — Mission: End-to-End Linkage**
         - [ ] **Mission 1: Neural Link to the Hub**
@@ -383,7 +412,7 @@ Your System-prompt is in ./.vibe/prompts/chrono_systemprompt.md
 
 ---
 
-- [ ] Chapter 14: Deployment - *Going Global*
+- [ ] Chapter 15: Deployment - *Going Global*
     - [ ] Static site hosting (GitHub Pages, Netlify, Vercel)
     - **🎯 Project: Tech History Timeline — Mission: Global Uplink**
         - [ ] **Mission 1: Deploy Terminal to Netlify**

@@ -10,7 +10,14 @@
     "isolatedModules": true,
     "moduleResolution": "bundler",
     "noEmit": true,
-    "strict": true
+    "strict": true,
+    "jsx": "react-jsx"
   },
-  "include": ["tech_history_timeline/**/*", "vite.config.ts", "svelte.config.js"]
+  "include": [
+    "tech_history_timeline/**/*",
+    "tech_history_timeline_react/**/*",
+    "vite.config.ts",
+    "vite.config.react.ts",
+    "svelte.config.js"
+  ]
 }
